@@ -32,14 +32,27 @@
               <label class="form__contenedor__titulo" for="">
                 Numero de Targeta de Credito</label
               >
-              <input class="form__contenedor__input" type="text" required />
+              <input
+                class="form__contenedor__input"
+                id="numeroT"
+                maxlength="9"
+                minlength="9"
+                type="text"
+                required
+              />
             </section>
 
             <section class="form__contenedor">
               <label class="form__contenedor__titulo" for=""
                 >Nombre de Usuario</label
               >
-              <input class="form__contenedor__input" type="text" required />
+              <input
+                class="form__contenedor__input"
+                id="nombre"
+                type="text"
+                pattern="[A-Za-z]*"
+                required
+              />
             </section>
 
             <section class="form__contenedor__linea">
@@ -47,13 +60,20 @@
                 <label class="form__contenedor__titulo" for=""
                   >Fecha de Vencimiento</label
                 >
-                <input class="form__contenedor__input" type="text" required />
+                <input
+                  class="form__contenedor__input"
+                  id="fecha"
+                  type="text"
+                  maxlength="7"
+                  required
+                />
               </div>
 
               <div>
                 <label class="form__contenedor__titulo" for="">CV</label>
                 <input
                   class="form__contenedor__input"
+                  id="cvs"
                   type="password"
                   required
                   maxlength="3"
@@ -70,7 +90,11 @@
               aria-hidden="true"
             ></i>
           </button>
-          <button class="form__contenedor__boton__enviar" id="enviar">
+          <button
+            type="submit"
+            class="form__contenedor__boton__enviar"
+            id="enviar"
+          >
             <i
               class="form__contenedor__boton__enviar__icon fa fa-credit-card-alt"
               aria-hidden="true"
